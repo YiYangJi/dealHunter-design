@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css" />
+  </head>
+
+  <body class="bg-dark">
+    <nav class="navbar navbar-dark bg-black fixed-top">
+      <div class="container-fluid">
+        <img src="/logo_DealHunter-nobg.png" alt="" height="80" />
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">DealHunter</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">Home</li>
+              <li class="nav-item">Search</li>
+              <li class="nav-item">Search</li>
+            </ul>
+            <form class="d-flex mt-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+
+              <button class="btn btn-success" type="submit" onClick="{handleGameName}">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="mt-5"></div>
+    <div class="bg-overlay pt-4">
+      <div class="row text-center text-white">
+        <h1 class="pt-5 fw-bold mb-5">Find your favorites at the best price!</h1>
+        <h4 class="px-5 pb-5">
+          Welcome to our video game deals platform, where you'll find a wide range of titles, from timeless classics to the latest releases.
+          Our goal is to give you with access to the games you love at the best possible price.
+          <br />
+          <br />
+          Explore our diverse catalogue and discover irresistible deals on action, adventure, strategy, sports, and much more. Don't miss
+          out on savings on your favorite titles and join our community of passionate gamers today.
+          <br />
+          <br />
+          Explore, save, and play more with us!
+        </h4>
+        <br />
+        <br />
+      </div>
+    </div>
+
+    <div class="container my-5">
+      <div class="d-flex align-items-center">
+        <h3 class="text-white">New deals</h3>
+        <a href="" class="text-decoration-none text-white ms-4">
+          See all
+          <i class="fa-solid fa-caret-right"></i>
+        </a>
+      </div>
+
+      <div id="carouselExampleControls" class="carousel">
+        <div class="carousel-inner p-3">
+          <div class="carousel-item me-0 active">
+            <div class="card-carrousel position-relative border-0 m-2">
+              <img
+                class="card-img-top img-fluid object-fit-cover h-100 rounded rounded"
+                src="https://media.rawg.io/media/games/957/957154d665ae676b00c0859551c733b1.jpg"
+                alt="Title" />
+              <div class="details text-white w-100 position-absolute bottom-0 overflow-hidden p-2 rounded-bottom rounded-bottom">
+                <p class="fw-bold lh-lg carousel-game-description overflow-hidden">Ghostrunner</p>
+                <p class="pt-1 text-end">
+                  From:
+                  <span class="fs-3">22</span>
+                  €
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item me-0">
+            <div class="card-carrousel position-relative border-0 m-2">
+              <img
+                class="card-img-top img-fluid object-fit-cover h-100 rounded rounded"
+                src="https://media.rawg.io/media/games/957/957154d665ae676b00c0859551c733b1.jpg"
+                alt="Title" />
+              <div class="details text-white w-100 position-absolute bottom-0 overflow-hidden p-2 rounded-bottom rounded-bottom">
+                <p class="fw-bold lh-lg carousel-game-description overflow-hidden">Ghostrunner</p>
+                <p class="pt-1 text-end">
+                  From:
+                  <span class="fs-3">22</span>
+                  €
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item me-0">
+            <div class="card-carrousel position-relative border-0 m-2">
+              <img
+                class="card-img-top img-fluid object-fit-cover h-100 rounded rounded"
+                src="https://media.rawg.io/media/games/957/957154d665ae676b00c0859551c733b1.jpg"
+                alt="Title" />
+              <div class="details text-white w-100 position-absolute bottom-0 overflow-hidden p-2 rounded-bottom rounded-bottom">
+                <p class="fw-bold lh-lg carousel-game-description overflow-hidden">Ghostrunner</p>
+                <p class="pt-1 text-end">
+                  From:
+                  <span class="fs-3">22</span>
+                  €
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item me-0">
+            <div class="card-carrousel position-relative border-0 m-2">
+              <img
+                class="card-img-top img-fluid object-fit-cover h-100 rounded rounded"
+                src="https://media.rawg.io/media/games/957/957154d665ae676b00c0859551c733b1.jpg"
+                alt="Title" />
+              <div class="details text-white w-100 position-absolute bottom-0 overflow-hidden p-2 rounded-bottom rounded-bottom">
+                <p class="fw-bold lh-lg carousel-game-description overflow-hidden">Ghostrunner</p>
+                <p class="pt-1 text-end">
+                  From:
+                  <span class="fs-3">22</span>
+                  €
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item me-0">
+            <div class="card-carrousel position-relative border-0 m-2">
+              <img
+                class="card-img-top img-fluid object-fit-cover h-100 rounded rounded"
+                src="https://media.rawg.io/media/games/957/957154d665ae676b00c0859551c733b1.jpg"
+                alt="Title" />
+              <div class="details text-white w-100 position-absolute bottom-0 overflow-hidden p-2 rounded-bottom rounded-bottom">
+                <p class="fw-bold lh-lg carousel-game-description overflow-hidden">Ghostrunner</p>
+                <p class="pt-1 text-end">
+                  From:
+                  <span class="fs-3">22</span>
+                  €
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev rounded-circle top-50"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next rounded-circle top-50"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="row justify-content-center mt-5">
+        <div class="col-lg-5 col-12">
+          <h3 class="text-white text-center">Best deals</h3>
+          <div class="card bg-black text-light rounded-0 border-bottom mx-auto" style="max-width: 500px; max-height: 45px">
+            <div class="row g-0 align-items-center">
+              <div class="col-3">
+                <img
+                  src="https://cdn.cloudflare.steamstatic.com/steam/apps/1139280/capsule_sm_120.jpg?t=1706115924"
+                  class="img-fluid"
+                  alt="Card title" />
+              </div>
+              <div class="col-9">
+                <div class="row justify-content-between align-items-center">
+                  <div class="col-md-9 col-8">
+                    <p
+                      class="card-text text-truncate m-0"
+                      data-bs-toggle="tooltip"
+                      title="Neverwinter Nights: Enhanced Edition Digital Deluxe Edition">
+                      Neverwinter Nights: Enhanced Edition Digital Deluxe Edition
+                    </p>
+                  </div>
+                  <div class="col-md-3 col-4">
+                    <p class="m-0">
+                      <span class="fw-bold fs-5">0.22€</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-black text-light rounded-0 border-bottom mx-auto" style="max-width: 500px; max-height: 45px">
+            <div class="row g-0 align-items-center">
+              <div class="col-3">
+                <img
+                  src="https://cdn.cloudflare.steamstatic.com/steam/apps/1139280/capsule_sm_120.jpg?t=1706115924"
+                  class="img-fluid"
+                  alt="Card title" />
+              </div>
+              <div class="col-9">
+                <div class="row justify-content-between align-items-center">
+                  <div class="col-md-9 col-8">
+                    <p
+                      class="card-text text-truncate m-0"
+                      data-bs-toggle="tooltip"
+                      title="Neverwinter Nights: Enhanced Edition Digital Deluxe Edition">
+                      Neverwinter Nights: Enhanced Edition Digital Deluxe Edition
+                    </p>
+                  </div>
+                  <div class="col-md-3 col-4">
+                    <p class="m-0">
+                      <span class="fw-bold fs-5">0.22€</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-black text-light rounded-0 border-bottom mx-auto" style="max-width: 500px; max-height: 45px">
+            <div class="row g-0 align-items-center">
+              <div class="col-3">
+                <img
+                  src="https://cdn.cloudflare.steamstatic.com/steam/apps/1139280/capsule_sm_120.jpg?t=1706115924"
+                  class="img-fluid"
+                  alt="Card title" />
+              </div>
+              <div class="col-9">
+                <div class="row justify-content-between align-items-center">
+                  <div class="col-md-9 col-8">
+                    <p
+                      class="card-text text-truncate m-0"
+                      data-bs-toggle="tooltip"
+                      title="Neverwinter Nights: Enhanced Edition Digital Deluxe Edition">
+                      Neverwinter Nights: Enhanced Edition Digital Deluxe Edition
+                    </p>
+                  </div>
+                  <div class="col-md-3 col-4">
+                    <p class="m-0">
+                      <span class="fw-bold fs-5">0.22€</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-black text-light rounded-0 border-bottom mx-auto" style="max-width: 500px; max-height: 45px">
+            <div class="row g-0 align-items-center">
+              <div class="col-3">
+                <img
+                  src="https://cdn.cloudflare.steamstatic.com/steam/apps/1139280/capsule_sm_120.jpg?t=1706115924"
+                  class="img-fluid"
+                  alt="Card title" />
+              </div>
+              <div class="col-9">
+                <div class="row justify-content-between align-items-center">
+                  <div class="col-md-9 col-8">
+                    <p
+                      class="card-text text-truncate m-0"
+                      data-bs-toggle="tooltip"
+                      title="Neverwinter Nights: Enhanced Edition Digital Deluxe Edition">
+                      Neverwinter Nights: Enhanced Edition Digital Deluxe Edition
+                    </p>
+                  </div>
+                  <div class="col-md-3 col-4">
+                    <p class="m-0">
+                      <span class="fw-bold fs-5">0.22€</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-black text-light rounded-0 border-bottom mx-auto" style="max-width: 500px; max-height: 45px">
+            <div class="row g-0 align-items-center">
+              <div class="col-3">
+                <img
+                  src="https://cdn.cloudflare.steamstatic.com/steam/apps/1139280/capsule_sm_120.jpg?t=1706115924"
+                  class="img-fluid"
+                  alt="Card title" />
+              </div>
+              <div class="col-9">
+                <div class="row justify-content-between align-items-center">
+                  <div class="col-md-9 col-8">
+                    <p
+                      class="card-text text-truncate m-0"
+                      data-bs-toggle="tooltip"
+                      title="Neverwinter Nights: Enhanced Edition Digital Deluxe Edition">
+                      Neverwinter Nights: Enhanced Edition Digital Deluxe Edition
+                    </p>
+                  </div>
+                  <div class="col-md-3 col-4">
+                    <p class="m-0">
+                      <span class="fw-bold fs-5">0.22€</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-black text-light rounded-0 border-bottom mx-auto" style="max-width: 500px; max-height: 45px">
+            <div class="row g-0 align-items-center">
+              <div class="col-3">
+                <img
+                  src="https://cdn.cloudflare.steamstatic.com/steam/apps/1139280/capsule_sm_120.jpg?t=1706115924"
+                  class="img-fluid"
+                  alt="Card title" />
+              </div>
+              <div class="col-9">
+                <div class="row justify-content-between align-items-center">
+                  <div class="col-md-9 col-8">
+                    <p
+                      class="card-text text-truncate m-0"
+                      data-bs-toggle="tooltip"
+                      title="Neverwinter Nights: Enhanced Edition Digital Deluxe Edition">
+                      Neverwinter Nights: Enhanced Edition Digital Deluxe Edition
+                    </p>
+                  </div>
+                  <div class="col-md-3 col-4">
+                    <p class="m-0">
+                      <span class="fw-bold fs-5">0.22€</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-black text-light rounded-0 border-bottom mx-auto" style="max-width: 500px; max-height: 45px">
+            <div class="row g-0 align-items-center">
+              <div class="col-3">
+                <img
+                  src="https://cdn.cloudflare.steamstatic.com/steam/apps/1139280/capsule_sm_120.jpg?t=1706115924"
+                  class="img-fluid"
+                  alt="Card title" />
+              </div>
+              <div class="col-9">
+                <div class="row justify-content-between align-items-center">
+                  <div class="col-md-9 col-8">
+                    <p
+                      class="card-text text-truncate m-0"
+                      data-bs-toggle="tooltip"
+                      title="Neverwinter Nights: Enhanced Edition Digital Deluxe Edition">
+                      Neverwinter Nights: Enhanced Edition Digital Deluxe Edition
+                    </p>
+                  </div>
+                  <div class="col-md-3 col-4">
+                    <p class="m-0">
+                      <span class="fw-bold fs-5">0.22€</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 col-12">
+          <h3 class="text-white text-center">Top rated</h3>
+          <div class="card bg-black text-light rounded-0 border-bottom mx-auto" style="max-width: 500px; max-height: 45px">
+            <div class="row g-0 align-items-center">
+              <div class="col-3">
+                <img
+                  src="https://cdn.cloudflare.steamstatic.com/steam/apps/1139280/capsule_sm_120.jpg?t=1706115924"
+                  class="img-fluid"
+                  alt="Card title" />
+              </div>
+              <div class="col-9">
+                <div class="row justify-content-between align-items-center">
+                  <div class="col-md-9 col-8">
+                    <p
+                      class="card-text text-truncate m-0"
+                      data-bs-toggle="tooltip"
+                      title="Neverwinter Nights: Enhanced Edition Digital Deluxe Edition">
+                      Neverwinter Nights: Enhanced Edition Digital Deluxe Edition
+                    </p>
+                  </div>
+                  <div class="col-md-3 col-4">
+                    <p class="m-0">
+                      <span class="fw-bold fs-5">0.22€</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-black text-light rounded-0 border-bottom mx-auto" style="max-width: 500px; max-height: 45px">
+            <div class="row g-0 align-items-center">
+              <div class="col-3">
+                <img
+                  src="https://cdn.cloudflare.steamstatic.com/steam/apps/1139280/capsule_sm_120.jpg?t=1706115924"
+                  class="img-fluid"
+                  alt="Card title" />
+              </div>
+              <div class="col-9">
+                <div class="row justify-content-between align-items-center">
+                  <div class="col-md-9 col-8">
+                    <p
+                      class="card-text text-truncate m-0"
+                      data-bs-toggle="tooltip"
+                      title="Neverwinter Nights: Enhanced Edition Digital Deluxe Edition">
+                      Neverwinter Nights: Enhanced Edition Digital Deluxe Edition
+                    </p>
+                  </div>
+                  <div class="col-md-3 col-4">
+                    <p class="m-0">
+                      <span class="fw-bold fs-5">0.22€</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-black text-light rounded-0 border-bottom mx-auto" style="max-width: 500px; max-height: 45px">
+            <div class="row g-0 align-items-center">
+              <div class="col-3">
+                <img
+                  src="https://cdn.cloudflare.steamstatic.com/steam/apps/1139280/capsule_sm_120.jpg?t=1706115924"
+                  class="img-fluid"
+                  alt="Card title" />
+              </div>
+              <div class="col-9">
+                <div class="row justify-content-between align-items-center">
+                  <div class="col-md-9 col-8">
+                    <p
+                      class="card-text text-truncate m-0"
+                      data-bs-toggle="tooltip"
+                      title="Neverwinter Nights: Enhanced Edition Digital Deluxe Edition">
+                      Neverwinter Nights: Enhanced Edition Digital Deluxe Edition
+                    </p>
+                  </div>
+                  <div class="col-md-3 col-4">
+                    <p class="m-0">
+                      <span class="fw-bold fs-5">0.22€</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-black text-light rounded-0 border-bottom mx-auto" style="max-width: 500px; max-height: 45px">
+            <div class="row g-0 align-items-center">
+              <div class="col-3">
+                <img
+                  src="https://cdn.cloudflare.steamstatic.com/steam/apps/1139280/capsule_sm_120.jpg?t=1706115924"
+                  class="img-fluid"
+                  alt="Card title" />
+              </div>
+              <div class="col-9">
+                <div class="row justify-content-between align-items-center">
+                  <div class="col-md-9 col-8">
+                    <p
+                      class="card-text text-truncate m-0"
+                      data-bs-toggle="tooltip"
+                      title="Neverwinter Nights: Enhanced Edition Digital Deluxe Edition">
+                      Neverwinter Nights: Enhanced Edition Digital Deluxe Edition
+                    </p>
+                  </div>
+                  <div class="col-md-3 col-4">
+                    <p class="m-0">
+                      <span class="fw-bold fs-5">0.22€</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-black text-light rounded-0 border-bottom mx-auto" style="max-width: 500px; max-height: 45px">
+            <div class="row g-0 align-items-center">
+              <div class="col-3">
+                <img
+                  src="https://cdn.cloudflare.steamstatic.com/steam/apps/1139280/capsule_sm_120.jpg?t=1706115924"
+                  class="img-fluid"
+                  alt="Card title" />
+              </div>
+              <div class="col-9">
+                <div class="row justify-content-between align-items-center">
+                  <div class="col-md-9 col-8">
+                    <p
+                      class="card-text text-truncate m-0"
+                      data-bs-toggle="tooltip"
+                      title="Neverwinter Nights: Enhanced Edition Digital Deluxe Edition">
+                      Neverwinter Nights: Enhanced Edition Digital Deluxe Edition
+                    </p>
+                  </div>
+                  <div class="col-md-3 col-4">
+                    <p class="m-0">
+                      <span class="fw-bold fs-5">0.22€</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-black text-light rounded-0 border-bottom mx-auto" style="max-width: 500px; max-height: 45px">
+            <div class="row g-0 align-items-center">
+              <div class="col-3">
+                <img
+                  src="https://cdn.cloudflare.steamstatic.com/steam/apps/1139280/capsule_sm_120.jpg?t=1706115924"
+                  class="img-fluid"
+                  alt="Card title" />
+              </div>
+              <div class="col-9">
+                <div class="row justify-content-between align-items-center">
+                  <div class="col-md-9 col-8">
+                    <p
+                      class="card-text text-truncate m-0"
+                      data-bs-toggle="tooltip"
+                      title="Neverwinter Nights: Enhanced Edition Digital Deluxe Edition">
+                      Neverwinter Nights: Enhanced Edition Digital Deluxe Edition
+                    </p>
+                  </div>
+                  <div class="col-md-3 col-4">
+                    <p class="m-0">
+                      <span class="fw-bold fs-5">0.22€</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-black text-light rounded-0 border-bottom mx-auto" style="max-width: 500px; max-height: 45px">
+            <div class="row g-0 align-items-center">
+              <div class="col-3">
+                <img
+                  src="https://cdn.cloudflare.steamstatic.com/steam/apps/1139280/capsule_sm_120.jpg?t=1706115924"
+                  class="img-fluid"
+                  alt="Card title" />
+              </div>
+              <div class="col-9">
+                <div class="row justify-content-between align-items-center">
+                  <div class="col-md-9 col-8">
+                    <p
+                      class="card-text text-truncate m-0"
+                      data-bs-toggle="tooltip"
+                      title="Neverwinter Nights: Enhanced Edition Digital Deluxe Edition">
+                      Neverwinter Nights: Enhanced Edition Digital Deluxe Edition
+                    </p>
+                  </div>
+                  <div class="col-md-3 col-4">
+                    <p class="m-0">
+                      <span class="fw-bold fs-5">0.22€</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center text-white" style="background-color: #3f51b5">
+      <!-- Grid container -->
+      <div class="container">
+        <!-- Section: Links -->
+        <section class="mt-5">
+          <!-- Grid row-->
+          <div class="row text-center d-flex justify-content-center pt-5">
+            <!-- Grid column -->
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-white">About us</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-white">Products</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-white">Awards</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-white">Help</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-white">Contact</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row-->
+        </section>
+        <!-- Section: Links -->
+
+        <hr class="my-5" />
+
+        <!-- Section: Text -->
+        <section class="mb-5">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-8">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum repellat quaerat voluptatibus placeat nam,
+                commodi optio pariatur est quia magnam eum harum corrupti dicta, aliquam sequi voluptate quas.
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- Section: Text -->
+
+        <!-- Section: Social -->
+        <section class="text-center mb-5">
+          <a href="" class="text-white me-4">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-github"></i>
+          </a>
+        </section>
+        <!-- Section: Social -->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2020 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
